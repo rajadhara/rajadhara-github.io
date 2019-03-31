@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DS wedding</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="shortcut icon" href="images/favicon.ico">
+	
+  <style>
+    @font-face {
+	  font-family: Roboto;
+	  src: url('css/fonts/Roboto-Regular.ttf');
+	  font-weight:900
+    }
+    @font-face {
+	  font-family: bannerFont;
+	  src: url('css/fonts/Brusher-Regular.ttf');
+	  font-weight:900
+	}
+    html, body {
+        height: 100%;
+        margin: 0px;
+	overflow:hidden;
+    }
+    #uname{
+    	text-transform:capitalize
+    }
+    body{
+    	text-align:center;
+        background:url('images/Invite.jpg') no-repeat;
+        font-family:bannerFont;
+	background-size:cover;
+    }
+    .container{
+    	height: 100%;
+	 margin-top:-20px
+	}
+    a{
+    font-size:28px
+    }
+	  *{
+  color:#fff !important;
+}
+h1 {
+    padding-top: 36%;
+    word-wrap: break-word;
+}
+p,a {
+    font-size: 25px;
+    font-family:'Roboto';
+    margin: 12% auto;
+}
+a {
+    text-decoration: none;
+    background-color: #10c9d0;
+    border-radius: 6px;
+    padding: 5px 15px;
+    box-shadow: 0px 3px 20px #0006;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+    </style>
+</head>
+
+<body>
+<div class="container">
+  <h1 class="animated fadeInUp delay-1s">Hi, <span id="uname">dsdsa</span></h1>
+<p class="animated fadeInUp delay-2s">we invite you to celebrate our wedding</p>
+  <a  class="animated fadeInUp delay-3s" target="_self" href="https://anandyson.github.io/rajudharu">JOIN US</a>
+</div>
+    <script>
+    var uname =  window.location.href.split('/');
+  document.getElementById("uname").innerHTML = 
+  uname[uname.length-1];
+  document.title = "Hi, "+uname[uname.length-1];
+  </script>
+</body>
+</html>
