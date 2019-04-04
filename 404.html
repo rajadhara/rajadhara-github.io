@@ -72,8 +72,12 @@ a {
 </div>
     <script>
     var uname =  window.location.href.split('/');
+	    if( uname[uname.length-1] === "friends"){
+	    	window.open("https://rajadhara.github.io/friends.html",_self);
+	    }
   document.getElementById("uname").innerHTML = 
   uname[uname.length-1];
+
   document.title = "Hi, "+uname[uname.length-1];
   </script>
 </body>
