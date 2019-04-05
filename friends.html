@@ -41,30 +41,25 @@
 			</div>
 		    </div>
 		</div>
-
-			<header id="header" class="skel-layers-fixed">
-				<h1><a href="#">Soundarajan Weds Dharunnya</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="#banner">Welcome</a></li>
-						<li><a href="#one">When & Where</a></li>
-						<li><a href="#two">The Couple</a></li>
-						<li><a href="#three">The Family</a></li>
-					</ul>
-				</nav>
-			</header>
 		<!-- Banner -->
 			<section id="banner" style="
     background-image: url('../images/bg.jpeg');
     padding-top: 16em;
-    background-position: center -18%;">
+    background-position: center 0">
 				<div class="inner animated a_a fadeIn">
 					<h2>Soundarajan</h2><h2>&</h2><h2>Dharunnya</h2>
 					<p>Are getting married!</p>					
 				</div>
 			</section>
 		<!-- One -->
-			<section id="one" class="wrapper style1">
+			<section id="one" class="wrapper style1"  style="
+    background: #e42427;
+    background: -webkit-linear-gradient(to right, #ab2330, #e42427);
+    background: -webkit-linear-gradient(left, #ab2330, #e42427);
+    background: -webkit-gradient(linear, right top, left top, from(#ab2330), to(#e42427));
+    background: -o-linear-gradient(left, #ab2330, #e42427);
+    background: linear-gradient(to right, #ab2330, #e42427);
+">
 				<header class="major">
 <h2 class="text-left" style="
     text-align: start;
@@ -132,6 +127,8 @@ Without you, it couldn’t be a journey, worth-remembering”</h4>
 				</a>
 			</footer>
 	<script>
+		
+		$('.wrapper.style1 *').css({"color":"#fff"});
 	       $(window).scroll(function(e) {
 		    if($(this).scrollTop()>200){
 			$('.floaterbtn').fadeIn(1000);
